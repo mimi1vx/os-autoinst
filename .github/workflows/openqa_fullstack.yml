@@ -16,7 +16,7 @@ jobs:
     container:
       image: registry.opensuse.org/devel/openqa/ci/containers/base:latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Make project folder user-writable
         run: sudo chown -R $USER ../../os-autoinst
       - name: Clone openQA
